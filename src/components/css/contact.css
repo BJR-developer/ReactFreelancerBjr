@@ -1,0 +1,68 @@
+.contact{
+    background-color: rgb(0, 0, 31);
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+.cform{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.cform>div>input , .messageField{
+    border-radius: 20px;
+    background-color: rgb(37, 37, 48);
+    padding: 10px;
+}
+.cform>div>input , .messageField{
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.cform>div>input , .messageField{
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+.messageField{
+    width: 550px;
+    height: 50px;
+}
+@media only screen and (max-width:568px){
+    .messageField{
+        width: 300px;
+        height: 50px;
+        justify-content: start;
+    }
+    .cform{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .cform>div>input{
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contact>button{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #cb1430;
+    width: 120px;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    background-color:#cb1430 ;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.6s;
+}
+.contact>button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}

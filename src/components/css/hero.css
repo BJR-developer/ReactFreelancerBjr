@@ -1,0 +1,99 @@
+.herosec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 50px;
+    overflow: visible;
+}
+.small-about{
+    padding-top: 20px;
+    padding-left: 100px;
+    color: white;
+    width: 550px;
+}
+.small-about>ul>li{
+    list-style: none;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    padding-left: 0;
+
+}
+.herosec>img{
+    border-bottom-right-radius: 10%;
+}
+.greetings{
+    background-color: #cb1430;
+    width: 40%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border-radius: 30px 30px 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nameTitle{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.small-about>p{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.fas{
+    padding-right: 7px;
+}
+.fab{
+    padding-right: 7px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.social-media>i{
+    border: 2px solid;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.157);
+    border-radius: 50%;
+}
+@media only screen and (max-width:900px){
+    .herosec{
+        padding:70px 0 70px 0;
+        display: flex;
+        justify-content:flex-end;
+        flex-wrap: nowrap;
+    }
+    .herosec>img{
+        padding-right: 10px;
+        width: 300px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: start;
+        width: 200px;
+    }
+    .social-media>i{
+        margin-left: 8px;
+    }
+    .small-about>p{
+        height: 60px;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+    }    
+    .small-about{
+        padding-top: 20px;
+        padding-left: 10px;
+        color: white;
+        width: 550px;
+    }
+    .greetings{
+        width: 100%;
+    }
+}

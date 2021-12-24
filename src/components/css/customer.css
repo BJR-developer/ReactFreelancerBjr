@@ -1,0 +1,43 @@
+.review-content>ul{
+    display: flex;
+    flex-wrap: wrap;
+    width:auto;
+}
+.review-content{
+    background-color: rgb(0, 0, 31);
+    margin: -51px auto;
+    padding-bottom: 50px;
+}
+.review-content>ul>li{
+    border-radius: 10px;
+    color: white;
+    list-style:none;
+    background-color: rgb(27, 27, 41);
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+}
+.review-content>ul>li>img{
+    border: 2px solid white;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.checked {
+    color: orange;
+  }
+.review-content>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+.review-content>ul>li>author{
+    padding: 10px;
+    font-weight: 700;
+}
+.review-content>ul>li>review{
+    padding: 10px;
+}

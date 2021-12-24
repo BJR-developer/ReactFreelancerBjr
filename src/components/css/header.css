@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.forbg{
+  background-image: url('../img/bg3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+@media only screen and (max-width:900px) {
+  .forbg{
+    background-image: url('../img/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+.navtitle{
+    letter-spacing: 2px;
+    font-weight: 900px;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    display: block;
+}
+navbar{
+  display: none;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+navbar>ul{
+    display: flex;
+}
+navbar>ul>li{
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.topmobilebar{
+  display: flex;
+  justify-content: space-between;
+}
+headerm{
+  position: relative;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  height: 50px;
+  display: none;
+}
+.navtitlem{
+  padding: 20px 0 0 20px ;
+  letter-spacing: 2px;
+  font-weight: 900px;
+  font-size: 24px;
+  color: white;
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Roboto', sans-serif;
+}
+.navbarm>ul>li{
+  color: white;
+  width: 100%;
+  padding: 5px 15px 5px 15px;
+  background-color: rgba(0, 0, 0, 0.308);
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.navbarm>ul{
+  display: none;
+  justify-content: center;
+}
+.bar{
+  margin-top: 20px;
+  color: white;
+  float: right;
+  padding-right:20px;
+  font-size:25px
+}
+.fa-ellipsis-h{
+  transition: all 0.5s;
+}
+.fa-ellipsis-h:hover{
+  color: transparent;
+  -webkit-text-stroke:2px rgb(255, 255, 255)
+}
+.my-animate-top{
+  position:relative;
+  animation:animatetop 0.4s
+}
+@keyframes animatetop{from{top:-100px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetoprev{from{top:0;opacity:0} to{top:100px;opacity:1}}
+
+@media only screen and (max-width:900px){
+  headerm{
+    display: block;
+  }
+  header{
+    display: none;
+  }
+}
+
