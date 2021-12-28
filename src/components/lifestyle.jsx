@@ -3,7 +3,7 @@ import './css/lifestyle.css'
 
 export default function lifestyle() {
     return (
-        <div className='lifestyle'>
+        <div className='lifestyle' data-aos='fade-up' data-aos-duration="1000" data-aos-mirror="true">
             <div className='section-title'>FEATURED PROJECTS</div>
             <div className='life-content'>
             <div className='life-title'>

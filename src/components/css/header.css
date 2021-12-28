@@ -3,11 +3,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 .forbg{
   background-image: url('../img/bg3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  margin-top: -50px;
 }
 @media only screen and (max-width:900px) {
   .forbg{
@@ -21,7 +25,6 @@ body{
     letter-spacing: 2px;
     font-weight: 900px;
     font-size: 24px;
-    color: white;
     position: relative;
     display: flex;
     margin-top: auto;
@@ -29,13 +32,29 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 header{
+    z-index: 111111;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.431);
     height: 50px;
+    top: 0;
     display: block;
 }
+.navbarsticky{
+  z-index: 111111111111111111;
+  position: fixed;
+  top: 0;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 30px 1px rgb(0 0 0 / 32%);
+  color: rgb(0, 0, 0)
+}
+/* #navbar{
+  position: sticky;
+  background-color: white;
+  color: black;
+} */
 navbar{
-  display: none;
+    color: white;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -49,9 +68,16 @@ navbar>ul>li{
     cursor: pointer;
     padding: 0 10px 0 10px;
     list-style: none;
-    color: white;
     font-weight: 600;
     font-size: 14px;
+}
+.contactme{
+  padding: 0px 5px;
+  margin-left: 10px;
+  position: relative;
+  border-width: 2px !important;
+
+  top:-2px;
 }
 .sticky {
   position: fixed;
@@ -63,11 +89,8 @@ navbar>ul>li{
   justify-content: space-between;
 }
 headerm{
-  position: relative;
-  background-color: black;
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 0, 0, 0);
   height: 50px;
   display: none;
 }
@@ -89,11 +112,25 @@ headerm{
   padding: 5px 15px 5px 15px;
   background-color: rgba(0, 0, 0, 0.308);
   transition: all 0.5s;
-  overflow: hidden;
+  list-style: none;
+}
+.navbarm{
+  margin-top: -5px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
 }
 .navbarm>ul{
   display: none;
   justify-content: center;
+  flex-wrap: wrap;
+  place-items: center;
+}
+.fixmobilebar{
+  background-color: rgba(0, 0, 0, 0.445);
+  position: fixed;
+  color: black;
+  z-index: 2222222;
+  width:100%;
 }
 .bar{
   margin-top: 20px;
@@ -109,12 +146,12 @@ headerm{
   color: transparent;
   -webkit-text-stroke:2px rgb(255, 255, 255)
 }
-.my-animate-top{
+.my-animate-bottom{
   position:relative;
-  animation:animatetop 0.4s
+  animation:animatetoprevv 0.4s
 }
-@keyframes animatetop{from{top:-100px;opacity:0} to{top:0;opacity:1}}
-@keyframes animatetoprev{from{top:0;opacity:0} to{top:100px;opacity:1}}
+@keyframes animatetop{from{top:-10px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetoprevv{from{top:-100;opacity:0} to{top:0;opacity:1}}
 
 @media only screen and (max-width:900px){
   headerm{

@@ -2,10 +2,10 @@ import React from 'react'
 import './css/skill.css'
 export default function skill() {
     return (
-        <div>
-            <div className='section-title'>knowledge & skills</div>
-            {/* <div className='subtitle'>Hey yo brother, I am BJR who is a MERN Full Stack Developer. Below given my skill percentage</div> */}
-            <div className='skills'>
+        <section id='skills' className='myskill' data-aos='fade' data-aos-duration="1000" data-aos-mirror="true">
+            <div className='section-title'>knowledge & skills
+            </div>
+            <div className='skills'  data-aos='slide-up' data-aos-duration="1000" data-aos-mirror="true">
                 <ul>
                     <li style={{width:'95%'}}>HTML & CSS <span className='one'>95%</span></li>
                     <li style={{width:'82%'}}>MongoDB authentication <span className='six'>82%</span></li>
@@ -15,6 +15,6 @@ export default function skill() {
                     <li style={{width:'45%'}}>Figma <span className='two'>45%</span></li>
                 </ul>
             </div>
-        </div>
+        </section>
     )
 }

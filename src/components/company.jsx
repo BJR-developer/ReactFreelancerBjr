@@ -1,7 +1,7 @@
 import React from 'react'
 export default function company() {
     return (
-            <section className='footbg'>
+            <section className='footbg' id='company'>
             <div className='section-title'>UNITY STRENGTH</div>
             {/* this section take from footer but did not change class name */}
             <p className='overlay'>

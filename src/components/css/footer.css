@@ -31,13 +31,13 @@
     width: auto;
     position: relative;
     /* top:40%; */
-    background-image: url('https://source.unsplash.com/yH18lOSaZVQ/1200x320');
+    background-image: url('https://source.unsplash.com/4nSKsoYyuPQ/1200x320');
     background-size: cover;
     background-position: center;
 }
 .overlay>img{
     width:100%;
-    margin-top: -1px;
+    margin-top: -15px;
     transform: rotate(180deg);
 }
 .overlay{

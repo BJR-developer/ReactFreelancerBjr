@@ -2,10 +2,10 @@ import React from 'react'
 import './css/marketing.css'
 export default function marketing() {
     return (
-        <div className='marketing'>
-            <div className='section-title'>MY SERVICES</div>
+        <section id='services' className='marketing'>
+            <div className='section-title' data-aos='fade-down' data-aos-duration="1000" data-aos-mirror="true">MY SERVICES</div>
 
-            <div className='for-left'>
+            <div className='for-left' data-aos='fade-left' data-aos-duration="1000" data-aos-mirror="true">
                 <img src='https://source.unsplash.com/300x300/?pc' alt='computer' />
                 <div className='text-side'>
                 <div className='e-title'>React App Development</div>
@@ -13,7 +13,7 @@ export default function marketing() {
                 <price>541$</price>
                 </div>
             </div>
-            <div className='for-right'>
+            <div className='for-right' data-aos='fade-right' data-aos-duration="1000" data-aos-mirror="true">
                 <img src='https://source.unsplash.com/300x300/?pc' alt='computer' />
                 <div className='text-side'>
                 <div className='e-title'>Node Js App Build</div>
@@ -21,7 +21,7 @@ export default function marketing() {
                 <price>364$</price>
                 </div>
             </div>
-            <div className='for-left'>
+            <div className='for-left' data-aos='fade-left' data-aos-duration="1000" data-aos-mirror="true">
                 <img src='https://source.unsplash.com/300x300/?pc' alt='computer' />
                 <div className='text-side'>
                 <div className='e-title'>MERN Stack Website</div>
@@ -29,7 +29,7 @@ export default function marketing() {
                 <price>400$</price>
                 </div>
             </div>
-            <div className='for-right'>
+            <div className='for-right' data-aos='fade-right' data-aos-duration="1000" data-aos-mirror="true">
                 <img src='https://source.unsplash.com/300x300/?pc' alt='computer' />
                 <div className='text-side'>
                 <div className='e-title'>Ecommerce Wordpress Website</div>
@@ -38,6 +38,6 @@ export default function marketing() {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }

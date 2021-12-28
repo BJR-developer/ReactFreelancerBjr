@@ -1,28 +1,36 @@
+import * as React from 'react'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import Loading from './components/loading.jsx'
+import {Suspense, lazy} from 'react'
 import Header from './components/header.jsx'
-import Hero from './components/hero.jsx'
-import Skill from './components/skill.jsx'
-import Lifestyle from './components/lifestyle'
-import Portfolio from './components/portfolio'
-import Marketing from './components/marketing'
-import Review from './components/review'
-import Contact from './components/contact.jsx'
-import Footer from './components/footer.jsx'
+const Home = lazy(() => import ('./components/home'))
+const Skill = lazy(() => import ('./components/skill'))
+const Marketing = lazy(() => import ('./components/marketing'))
+const Portfolio = lazy(() => import ('./components/review'))
+const Contact = lazy(() => import ('./components/contact'))
+const Footer = lazy(() => import ('./components/footer'))
 function App() {
-  return (
-    <>
-    <div className='forbg'>
-    <Header/>
-    <Hero/>
-    </div>
-    <Lifestyle/>
-    <Skill/>
-    <Portfolio />
-    <Marketing />
-    <Review />
-    <Contact />
-    <Footer />
-    </>
-  );
+    return (
+        <>
+            <Router>
+                <Suspense fallback={<Loading/>}>
+                    <Header/>
+                    {/* this routes now no needed */}
+                    <Routes>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/skills' element={<Skill/>}/>
+                        <Route path='/services' element={<Marketing/>}/>
+                        <Route path='/experience' element={<Portfolio/>}/>
+                        <Route path='/contact' element={<Contact/>}/>
+                    </Routes>
+                    
+                    <Footer/>
+                </Suspense>
+            </Router>
+        </>
+    );
 }
 
 export default App;
+

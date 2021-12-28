@@ -1,7 +1,13 @@
+.myskill{
+    margin-bottom: 100px;
+}
 .subtitle{
+    text-transform: lowercase;
     text-align: center;
     font-size: 14px;
     color: rgb(77, 77, 77);
+}
+.items{
     padding-bottom: 50px;
 }
 .skills>ul{
