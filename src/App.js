@@ -10,6 +10,7 @@ const Marketing = lazy(() => import ('./components/marketing'))
 const Portfolio = lazy(() => import ('./components/review'))
 const Contact = lazy(() => import ('./components/contact'))
 const Footer = lazy(() => import ('./components/footer'))
+const Community = lazy(() => import ('./components/community'))
 function App() {
     return (
         <>
@@ -24,7 +25,7 @@ function App() {
                         <Route path='/experience' element={<Portfolio/>}/>
                         <Route path='/contact' element={<Contact/>}/>
                     </Routes>
-                    
+                    <Community/>
                     <Footer/>
                 </Suspense>
             </Router>
