@@ -6,7 +6,9 @@ export default function header() {
     function show1() {
         document.getElementById('id01').style.display = 'block';
       }
-
+      const jointodays = () => {
+        document.querySelector('.signupform').style.display = 'block'
+    }
     function displayshow(){ 
     const doc =document.querySelector('.navbarm>ul');
     if(doc.style.display==='none'){
@@ -16,9 +18,12 @@ export default function header() {
     else{
         doc.style.display='none';
     }};
-    function displayshowul(){ 
-    const doc =document.querySelector('.navbarm>ul');
-        doc.style.display='none';
+
+    function hideul(){ 
+    const headul =document.querySelector('.navbarm>ul');
+    const hide = () =>{headul.style.display='none'} 
+    setTimeout( hide , 1000)
+    
     }
 
 const addClassHeader = () => {
@@ -53,10 +58,13 @@ window.addEventListener('scroll', function () {
                         <li><Link smooth={true} duration={1000} to='skills'>Skills</Link></li>
                         <li><Link smooth={true} duration={1000} to='portfolio'>Experience</Link></li>
                         <li><Link smooth={true} duration={1000} to='review'>Review</Link></li>
-                        <li><Link smooth={true} duration={1000} to='contact'>Contact me</Link></li>
+                        <li onClick={hideul}><Link smooth={true} duration={1000} to='contact'>Contact me</Link></li>
                         <li>
-                        <Link className='contactme' smooth={true} duration={1000} to='contact'>JOIN TODAYS</Link>
-                        {/* <div className='contactme' onClick={show1}>Login</div> */}
+                        <Link className='contactme' to='signupform'
+                                smooth={true}
+                                duration={1000}
+                                onClick={jointodays}>JOIN TODAYS</Link>                        
+                                {/* <div className='contactme' onClick={show1}>Login</div> */}
                         </li>
                     </ul>
                 </navbar>
@@ -68,13 +76,16 @@ window.addEventListener('scroll', function () {
                     <div onClick={()=>{displayshow()}} className='bar'><i className="fas fa-ellipsis-h"></i></div>
                     </div>
                     <ul style={{display:'none'}}>
-                    <li ><Link to='home' smooth={true} duration={1000}>Home</Link></li>
-                        <li ><Link smooth={true} duration={1000} to='services'>Services</Link></li>
-                        <li ><Link smooth={true} duration={1000} to='skills'>Skills</Link></li>
-                        <li ><Link smooth={true} duration={1000} to='review'>Review</Link></li>
-                        <li><Link smooth={true} duration={1000} to='contact'>Contact Me</Link></li>
+                        <li><Link onClick={()=>{hideul()}} to='home' smooth={true} duration={1000}>Home</Link></li>
+                        <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='services'>Services</Link></li>
+                        <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='skills'>Skills</Link></li>
+                        <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='review'>Review</Link></li>
+                        <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='contact'>Contact Me</Link></li>
                         {/* <p  onClick={()=> {show1()}}>Login</p> */}
-                        <li><Link smooth={true} duration={1000} to='contact'>Join Todays</Link>
+                        <li><Link  to='signupform'
+                                smooth={true}
+                                duration={1000}
+                                onClick={()=>{hideul();jointodays();}}>Join Todays</Link>
                         </li>
                     </ul>
                 </div>

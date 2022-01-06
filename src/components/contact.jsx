@@ -19,7 +19,7 @@ export default function Contact() {
 
     }
     return (
-        <section id='contact' data-aos='zoom-out' data-aos-duration="1000" data-aos-mirror="true" className='contact'>
+        <section id='contact' className='contact'>
             <div className='section-title' style={{color:'white'}}>Get In Touch</div>
              <p className='result'>
              {

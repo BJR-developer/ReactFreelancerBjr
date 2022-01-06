@@ -10,25 +10,21 @@ const Marketing = lazy(() => import ('./components/marketing'))
 const Portfolio = lazy(() => import ('./components/review'))
 const Contact = lazy(() => import ('./components/contact'))
 const Footer = lazy(() => import ('./components/footer'))
-const Community = lazy(() => import ('./components/community'))
 function App() {
     return (
         <>
-            <Router>
                 <Suspense fallback={<Loading/>}>
                     <Header/>
                     {/* this routes now no needed */}
                     <Routes>
-                        <Route path='/' element={<Home/>}/>
+                        <Route path='*' element={<Home/>}/>
                         <Route path='/skills' element={<Skill/>}/>
                         <Route path='/services' element={<Marketing/>}/>
                         <Route path='/experience' element={<Portfolio/>}/>
                         <Route path='/contact' element={<Contact/>}/>
                     </Routes>
-                    <Community/>
                     <Footer/>
                 </Suspense>
-            </Router>
         </>
     );
 }

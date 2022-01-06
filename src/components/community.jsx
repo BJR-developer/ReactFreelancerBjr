@@ -63,7 +63,7 @@ export default function Community() { // form alert
                     <p className='overlay'>
                         <img src='http://shanereact.ibthemespro.com/img/svg/paper.svg' alt="devider"/>
                         <div className='footer-container'>
-                            <div className='communityTitle'>Welcome to the Freelancerbjr communit
+                            <div className='communityTitle'>Welcome to the Freelancerbjr community
                             </div>
                             <div className='subcommunitytitle'>
                                 Get access to apps services, blog post, latest news and more.

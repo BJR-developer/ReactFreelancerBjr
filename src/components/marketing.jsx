@@ -5,7 +5,7 @@ import GigData from './loopcomponents/gig/gigData'
 export default function marketing() {
     return (
         <section id='services' className='marketing'>
-            <div className='section-title' data-aos='fade-down' data-aos-duration="1000" data-aos-mirror="true">MY SERVICES</div>
+            <div className='section-title'>MY SERVICES</div>
 
             <div className='myproducts'>
             {

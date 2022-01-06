@@ -1,31 +1,38 @@
 import React from 'react'
 import './css/portfolio.css'
+import Contact from './contact';
+
+import {BrowserRouter as Router, Routes, Route , Link} from "react-router-dom";
+
+function All(props) {
+    return(
+        <ul>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link1 } alt='pik from unsplash' /></li>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link2 } alt='pik from unsplash' /></li>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link3 } alt='pik from unsplash' /></li>
+    </ul>
+    )
+}
 export default function portfolio() {
     return (
         <section id='portfolio' className='portfolio'>
-            <div className='section-title-black' data-aos='fade-left' data-aos-duration="1000" data-aos-mirror="true">PORTFOLIO</div>
+            <div className='section-title-black'>PORTFOLIO</div>
             <div className='tab-button'>
-                <ul  data-aos='fade-right' data-aos-duration="1000" data-aos-mirror="true">
-                    <li>All</li>
-                    <li>Web Design</li>
-                    <li>React App</li>
-                    <li>NodeJS App</li>
-                    <li>Wordpress</li>
-                </ul>
-            </div>
-            
-            <div className='items'  data-aos='fade-up' data-aos-duration="1000" data-aos-mirror="true">
                 <ul>
-                    <li><img src='https://source.unsplash.com/300x300/?wordpress' alt='pik from unsplash' />
-                    <div className='backface'>Hello world</div>
-                    </li>
-                    <li><img src='https://source.unsplash.com/300x300/?nodejs' alt='pik from unsplash' /></li>
-                    <li><img src='https://source.unsplash.com/300x300/?reactjs' alt='pik from unsplash' /></li>
-                    <li><img src='https://source.unsplash.com/300x300/?webdeveloper' alt='pik from unsplash' /></li>
-                    <li><img src='https://source.unsplash.com/300x300/?webdesign' alt='pik from unsplash' /></li>
-                    <li><img src='https://source.unsplash.com/300x300/?developer' alt='pik from unsplash' /></li>
+                    <li><Link to="*">All </Link></li>
+                    <li><Link to="/reactjs">ReactJS </Link></li>
+                    <li><Link to="/nextjs">Next.JS </Link></li>
+                    <li><Link to="/nodejs">NodeJS App </Link></li>
                 </ul>
             </div>
+            <div className='items'>
+            <Routes>
+            <Route path="*" element={<All link1="nodejs" link2="facebook" link3="instagram"/>}/>
+            <Route path="/reactjs" element={<All link1="reactjs" link2="facebook" link3="instagram" />} />
+            <Route path="/nodejs" element={<All link1="nodejs" link2="facebook" link3="chat" />} />
+            <Route path='/nextjs' element={<All link1="professional" link2="whatsapp" link3="talk" />} />
+            </Routes>
+                </div>
         </section>
     )
 }

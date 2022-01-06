@@ -6,7 +6,7 @@ export default function review() {
     return (
         <section id='review' className='review'>
             <div className='review-content'>
-            <div className='section-title' style={{color:'white'}} data-aos='fade-up' data-aos-duration="1000" data-aos-mirror="true">Client Review</div>
+            <div className='section-title' style={{color:'white'}}>Client Review</div>
                 <ul>
                 {
                    rData.map((val)=>{
