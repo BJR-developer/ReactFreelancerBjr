@@ -1,6 +1,6 @@
 {
   "name": "freelancerbjr",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://bjrserver.herokuapp.com/",
   "version": "0.1.0",
   "homepage": "https://freelancerbjr.com/",
   "private": true,

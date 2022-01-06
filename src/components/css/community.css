@@ -2,10 +2,10 @@
 .footbg{
     width: auto;
     position: relative;
-    /* top:40%; */
     background-image: url('https://source.unsplash.com/4nSKsoYyuPQ/1200x320');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .overlay>img{
     width:100%;
