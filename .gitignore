@@ -7,17 +7,16 @@
 /target
 # testing
 /coverage
-
 # production
 /build
 
 # misc
-.DS_Store
-.env
-.firebaserc
-.vscode
-.firebaserc
-.github
+/.DS_Store
+/.env
+/.firebaserc
+/.vscode
+/.firebaserc
+/.github
 .env.development.local
 .env.test.local
 .env.production.local

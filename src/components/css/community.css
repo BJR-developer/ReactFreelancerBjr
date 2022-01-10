@@ -1,5 +1,4 @@
-
-.footbg{
+.footbg {
     width: auto;
     position: relative;
     background-image: url('https://source.unsplash.com/4nSKsoYyuPQ/1200x320');
@@ -7,17 +6,17 @@
     background-position: center;
     background-attachment: fixed;
 }
-.overlay>img{
-    width:100%;
+.overlay > img {
+    width: 100%;
     margin-top: -15px;
     transform: rotate(180deg);
 }
-.overlay{
+.overlay {
     background-color: rgb(60 60 60 / 60%);
     z-index: 1;
     width: auto;
 }
-.copyright{
+.copyright {
     margin-top: -20px;
     padding: 15px;
     color: white;
@@ -25,19 +24,19 @@
     background-color: rgb(0, 0, 31);
 }
 
-.signupform{
+.signupform {
     margin-top: -20px;
     background-color: #00001f;
     display: none;
 }
-.cformCommunity>div{
+.cformCommunity > div {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
 }
-.cformCommunity>div>input{
+.cformCommunity > div > input {
     border-radius: 20px;
     background-color: rgb(37, 37, 48);
     padding: 10px;
@@ -48,11 +47,11 @@
     color: rgb(255, 255, 255);
     width: 80%;
 }
-.signC{
+.signC {
     color: white;
     text-align: center;
 }
-.jointodays{
+.jointodays {
     background-color: white;
     border: 2px solid white;
     padding: 10px;
@@ -60,14 +59,14 @@
     transition: all 0.6s;
     margin-top: 20px;
 }
-.jointodays:hover{
+.jointodays:hover {
     margin-top: 30px;
     color: white;
     cursor: pointer;
     border: 2px solid white;
     background-color: transparent;
 }
-.communityTitle{
+.communityTitle {
     padding-bottom: 20px;
     text-align: center;
     display: flex;
@@ -77,12 +76,12 @@
     font-family: 'Pushster', cursive;
     font-weight: 900;
 }
-.finalresult{
+.finalresult {
     color: white;
     background-color: green;
     padding: 10px;
 }
-.finalresultdown{
+.finalresultdown {
     display: none;
     color: white;
     background-color: #cb1430;
