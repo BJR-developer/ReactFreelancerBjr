@@ -21,7 +21,7 @@ export default function Community() { // form alert
         if (user.password !== user.cpassword) {
             setPasserr("Password Not Match")
         } else {
-            axios.post("/signup", user)
+            axios.post("/api/signup", user)
             .then(res=>{
                 setPasserr("Account "+res.statusText + " Successfully")
                 document.querySelector('.finalresultdown').style.backgroundColor = 'green'
@@ -105,7 +105,7 @@ export default function Community() { // form alert
                                     required
                                     name='email'
                                     placeholder='Email'/>
-                                <input type='text'
+                                <input type='password'
                                     value={
                                         user.password
                                     }
@@ -113,7 +113,7 @@ export default function Community() { // form alert
                                     required
                                     name='password'
                                     placeholder='Password'/>
-                                <input type='text'
+                                <input type='password'
                                     value={
                                         user.cpassword
                                     }
