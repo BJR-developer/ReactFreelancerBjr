@@ -1,6 +1,6 @@
 const rData = [
     {
-        links :"https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/246141287_397051968633438_6057738298756195696_n.jpg?_nc_cat=104&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEYTKcoSKDNYCvcMowhzRB0Q_-lmelUr-BD_6WZ6VSv4Je4asszJy42-pkUEXRUuHe0KSsfFHPvQobeSHYMCRBN&_nc_ohc=9HrMXvkEOsEAX9TcTfE&tn=dmd1_FS0a6T4oWc5&_nc_ht=scontent.fdac135-1.fna&oh=00_AT8KePD54nYY3MTA6I_rLs923bnyKcaYmvQGQurxYpNB5Q&oe=61D8B634",
+        links :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSckISvT3VM_e0mP-Yn5H9_rO2A1bgyIi3SvyvjyeWKop3FGWuv1v8UDypTYwPZUaeE04&usqp=CAU",
         comment : "Jamil really is a good person",
         author : "Raiyana Azad",
         id:1
