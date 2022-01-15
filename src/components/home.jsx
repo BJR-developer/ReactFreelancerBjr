@@ -1,8 +1,6 @@
 import React from 'react'
 import {Suspense, lazy} from 'react'
 import Loading from './loading'
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
 
 
 const Hero = lazy(() => import ('./hero'))

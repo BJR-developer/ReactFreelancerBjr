@@ -1,6 +1,5 @@
 import React from 'react'
 import './css/portfolio.css'
-import Contact from './contact';
 
 import {BrowserRouter as Router, Routes, Route , Link} from "react-router-dom";
 

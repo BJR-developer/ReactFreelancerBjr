@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import axios from 'axios'
 import './css/login.css'
 export default function Header() {
-  const [errGet , setErr] = useState("ERR")
   const [user , setUser] = useState({
     email:"",password:""
   })
@@ -26,13 +25,7 @@ export default function Header() {
         console.log(error.response.status);
         console.log(error.response.headers);
       }
-    })
-      // try {
-      //   const result = await axios.post("/login" ,user);
-      //   console.log(result);
-      // } catch (error) {
-      //   console.log(error);
-      //   }    
+    })   
   }
   const jointodays = () => {
     document.querySelector('.signupform').style.display = 'block'

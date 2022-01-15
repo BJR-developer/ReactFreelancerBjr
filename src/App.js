@@ -12,10 +12,10 @@ const Contact = lazy(() => import ('./components/contact'))
 const Footer = lazy(() => import ('./components/footer'))
 function App() {
     return (
-        <>
+        <>  
                 <Suspense fallback={<Loading/>}>
                     <Header/>
-                    {/* this routes now no needed */}
+                    <Router>
                     <Routes>
                         <Route path='*' element={<Home/>}/>
                         <Route path='/skills' element={<Skill/>}/>
@@ -23,6 +23,8 @@ function App() {
                         <Route path='/experience' element={<Portfolio/>}/>
                         <Route path='/contact' element={<Contact/>}/>
                     </Routes>
+                    </Router>
+
                     <Footer/>
                 </Suspense>
         </>

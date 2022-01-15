@@ -11,10 +11,12 @@ export default function review() {
                 {
                    rData.map((val)=>{
                        return(
-                        <Review
+                        <Review key={val.id}
                 links = {val.links}
+                uniqueKey = {val.id}
                 comment = {val.comment}
                 author = {val.author}
+                alt = {val.author}
                  />
                    )
                 })

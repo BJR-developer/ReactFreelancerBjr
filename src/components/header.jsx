@@ -3,9 +3,6 @@ import './css/header.css'
 import {Link} from 'react-scroll'
 import Login from './login'
 export default function header() {
-    function show1() {
-        document.getElementById('id01').style.display = 'block';
-      }
       const jointodays = () => {
         document.querySelector('.signupform').style.display = 'block'
     }
@@ -27,13 +24,13 @@ export default function header() {
     }
 
 const addClassHeader = () => {
-    document.querySelector('navbar').classList.add("navbarsticky");
-    document.querySelector('navbar').classList.add("w3-animate-top");
+    document.querySelector('nav').classList.add("navbarsticky");
+    document.querySelector('nav').classList.add("w3-animate-top");
     document.querySelector('.contactme').classList.add("contactmesticky")
 }
 const removeClassHeader = () => {
-    document.querySelector('navbar').classList.remove("w3-animate-top");
-    document.querySelector('navbar').classList.remove("navbarsticky");
+    document.querySelector('nav').classList.remove("w3-animate-top");
+    document.querySelector('nav').classList.remove("navbarsticky");
     document.querySelector('.contactme').classList.remove("contactmesticky")
 }
 window.addEventListener('scroll', function () {
@@ -50,7 +47,7 @@ window.addEventListener('scroll', function () {
         <>
         <Login />
             <header>
-                <navbar id='navbarmy'>
+                <nav id='navbarmy'>
                     <div className='navtitle' style={{cursor:'pointer'}} onClick={()=>{window.location.reload()}}>Freelancer<span>BJR</span></div>
                     <ul>
                         <li><Link to='home' smooth={true} duration={1000}>Home</Link></li>
@@ -64,12 +61,11 @@ window.addEventListener('scroll', function () {
                                 smooth={true}
                                 duration={1000}
                                 onClick={jointodays}>JOIN TODAYS</Link>                        
-                                {/* <div className='contactme' onClick={show1}>Login</div> */}
                         </li>
                     </ul>
-                </navbar>
+                </nav>
             </header>
-            <headerm>
+            <div className='headerm'>
                 <div id='bgmobile' className='navbarm fixmobilebar'>
                 <div className='topmobilebar'>
                     <div className='navtitlem'>Freelancer BJR</div>
@@ -81,7 +77,6 @@ window.addEventListener('scroll', function () {
                         <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='skills'>Skills</Link></li>
                         <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='review'>Review</Link></li>
                         <li><Link onClick={()=>{hideul()}} smooth={true} duration={1000} to='contact'>Contact Me</Link></li>
-                        {/* <p  onClick={()=> {show1()}}>Login</p> */}
                         <li><Link  to='signupform'
                                 smooth={true}
                                 duration={1000}
@@ -89,7 +84,7 @@ window.addEventListener('scroll', function () {
                         </li>
                     </ul>
                 </div>
-            </headerm>
+            </div>
             
         </>
     )

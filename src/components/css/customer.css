@@ -41,7 +41,7 @@
     place-items: center;
     text-align: center;
 }
-.review-content>ul>li>author{
+.review-content>ul>li>.author{
     padding: 10px;
     font-weight: 700;
 }

@@ -1,10 +1,9 @@
 import React from 'react'
 import './css/community.css'
-import {useRef, useState} from 'react'
+import { useState} from 'react'
 import {Link} from 'react-scroll'
 import axios from 'axios'
 export default function Community() { // form alert
-    const [success, setSuccess] = useState()
     const [passerr, setPasserr] = useState("Loading...")
     // form collection
     const [user, setUser] = useState({name: "", email: "", password: '', cpassword: ''})
@@ -60,7 +59,7 @@ export default function Community() { // form alert
             <section className='community' id='community'>
                 <div className='section-title'>COMMUNITY</div>
                 <div className='footbg'>
-                    <p className='overlay'>
+                    <div className='overlay'>
                         <img src='http://shanereact.ibthemespro.com/img/svg/paper.svg' alt="devider"/>
                         <div className='footer-container'>
                             <div className='communityTitle'>Welcome to the Freelancerbjr community
@@ -73,7 +72,7 @@ export default function Community() { // form alert
                                 duration={1000}
                                 onClick={jointodays}>JOIN TODAYS</Link>
                         </div>
-                    </p>
+                    </div>
                 </div>
                 <div className='signupform'>
                     <form onSubmit={signupSend}>
@@ -87,7 +86,8 @@ export default function Community() { // form alert
                             }>JOIN NOW</section>
                             <div>
                                 <p className='signC'>
-                                    Signup to join our community</p>
+                                    Signup to join our community
+                                    </p>
                                 <span className='finalresultdown'>{passerr}</span>
                                 <input type='text'
                                     value={

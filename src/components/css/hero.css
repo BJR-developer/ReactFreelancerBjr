@@ -82,7 +82,7 @@ ul{
     }
     .social-media{
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         width: 200px;
     }
     .social-media>i{

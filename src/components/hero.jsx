@@ -17,17 +17,17 @@ export default function hero() {
                         wrapper='p'
                     /> */}
                     <ul className='w3-animate-right' >
-                        <li><i class="fas fa-home"></i>Dhaka, Bangladesh</li>
-                        <li><i class="fas fa-envelope"></i> liquidtv24@gmail.com</li>
-                        <li><i class="fas fa-link"></i>https://wwww.freelancerbjr.com</li>
-                        <li><i class="fas fa-phone"></i> +8801608234706</li>
+                        <li><i className="fas fa-home"></i>Dhaka, Bangladesh</li>
+                        <li><i className="fas fa-envelope"></i> liquidtv24@gmail.com</li>
+                        <li><i className="fas fa-link"></i>https://www.freelancerbjr.com</li>
+                        <li><i className="fas fa-phone"></i> +8801608234706</li>
                     </ul>
                     <div className='social-media w3-animate-fade' >
-                    <a target='_blank' rel='noreferrer' href='https://facebook.com/jamilur.rahman.bjr'><i class="fab fa-facebook"></i></a>
-                    <a target='_blank' rel='noreferrer' href='https://instagram.com/jamilur_rahman_bjr'><i class="fab fa-instagram"></i></a>
-                    <a target='_blank' rel='noreferrer' href='https://github.com/BJR-Developer'><i class="fab fa-github"></i></a>
-                    <a target='_blank' rel='noreferrer' href='https://twitter.com/freelancerbjr'><i class="fab fa-twitter"></i></a>
-                    <a target='_blank' rel='noreferrer' href='https://tiktok.com/jamilurrahmanbjr'><i class="fab fa-tiktok"></i></a>
+                    <a target='_blank' rel="noopener noreferrer" href='https://facebook.com/jamilur.rahman.bjr'><i className="fab fa-facebook"></i></a>
+                    <a target='_blank' rel="noopener noreferrer" href='https://instagram.com/jamilur_rahman_bjr'><i className="fab fa-instagram"></i></a>
+                    <a target='_blank' rel="noopener noreferrer" href='https://github.com/BJR-Developer'><i className="fab fa-github"></i></a>
+                    <a target='_blank' rel="noopener noreferrer" href='https://twitter.com/freelancerbjr'><i className="fab fa-twitter"></i></a>
+                    <a target='_blank' rel="noopener noreferrer" href='https://tiktok.com/jamilurrahmanbjr'><i className="fab fa-tiktok"></i></a>
                         {/* <p>Facebook</p>
                         <p>Instagram</p>
                         <p>Twitter</p>

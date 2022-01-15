@@ -13,11 +13,11 @@ export default function Gig(props) {
                         props.title
                     }</div>
                     <p className='little-text'>Starts from</p>
-                    <price>{
+                    <div className='price'>{
                         props.price
-                    }</price>
+                    }</div>
                 </div>
-                <a className='order' href='https://www.fiverr.com/bjrpro'>ORDER NOW</a>
+                <a className='order' href='https://www.fiverr.com/bjr_pro'>ORDER NOW</a>
             </div>
         </>
     )

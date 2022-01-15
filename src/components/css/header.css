@@ -56,7 +56,7 @@ header{
   background-color: white;
   color: black;
 } */
-navbar{
+nav{
     color: white;
     margin: 0 auto;
     width: 100%;
@@ -64,10 +64,10 @@ navbar{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-navbar>ul{
+nav>ul{
     display: flex;
 }
-navbar>ul>li{
+nav>ul>li{
     cursor: pointer;
     padding: 0 10px 0 10px;
     list-style: none;
@@ -98,7 +98,7 @@ navbar>ul>li{
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
 }
-headerm{
+.headerm{
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', sans-serif;
   height: 50px;
@@ -166,7 +166,7 @@ headerm{
 @keyframes animatetoprevv{from{top:-100;opacity:0} to{top:0;opacity:1}}
 
 @media only screen and (max-width:900px){
-  headerm{
+  .headerm{
     display: block;
   }
   header{

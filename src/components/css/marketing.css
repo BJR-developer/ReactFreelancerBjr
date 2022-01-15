@@ -32,7 +32,7 @@
 .e-title{
     font-size: 22px;
 }
-.text-side>price{
+.text-side>.price{
     font-weight: 700;
 }
 .proContents{
@@ -42,7 +42,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    place-items: start;
     
 }
 
