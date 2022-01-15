@@ -2,7 +2,8 @@ import React from "react";
 
 function Review(props) {
     return(
-        <li alt={props.alt}> 
+        <li alt={props.alt}>
+        <img src={props.links} />
         <div>{props.comment}</div>
         <div className="author">{props.author}</div>
         <div>
