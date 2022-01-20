@@ -4,6 +4,7 @@ import Loading from './loading'
 
 
 const Hero = lazy(() => import ('./hero'))
+const Blog = lazy(()=>import ('./Blog'))
 const Skill = lazy(() => import ('./skill'))
 const Marketing = lazy(() => import ('./marketing'))
 const Lifestyle = lazy(() => import ('./lifestyle'))
@@ -21,6 +22,7 @@ export default function Home() {
                         <Lifestyle/>
                         <Skill/>
                         <Portfolio/>
+                        <Blog/>
                         <Marketing/>
                         <Review/>
                         <Contact/>

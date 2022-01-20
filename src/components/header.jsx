@@ -3,6 +3,7 @@ import './css/header.css'
 import {Link} from 'react-scroll'
 import Login from './login'
 export default function header() {
+
       const jointodays = () => {
         document.querySelector('.signupform').style.display = 'block'
     }
@@ -52,6 +53,7 @@ window.addEventListener('scroll', function () {
                     <ul>
                         <li><Link to='home' smooth={true} duration={1000}>Home</Link></li>
                         <li><Link smooth={true} duration={1000} to='services'>Services</Link></li>
+                        <li><Link smooth={true} duration={1000} to='blogs'>Blogs</Link></li>
                         <li><Link smooth={true} duration={1000} to='skills'>Skills</Link></li>
                         <li><Link smooth={true} duration={1000} to='portfolio'>Experience</Link></li>
                         <li><Link smooth={true} duration={1000} to='review'>Review</Link></li>

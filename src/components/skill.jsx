@@ -1,5 +1,6 @@
 import React from 'react'
-import './css/skill.css'
+import './css/skill.css';
+
 export default function skill() {
     return (
         <section id='skills' className='myskill'>

@@ -1,18 +1,22 @@
 import React from 'react'
 import './css/portfolio.css'
-
+import { useParams } from 'react-router-dom';
 import {BrowserRouter as Router, Routes, Route , Link} from "react-router-dom";
 
 function All(props) {
+    let {slug} = useParams();
+    console.log(slug);
     return(
         <ul>
-        <li><img src={'https://source.unsplash.com/300x300/?' + props.link1 } alt='pik from unsplash' /></li>
-        <li><img src={'https://source.unsplash.com/300x300/?' + props.link2 } alt='pik from unsplash' /></li>
-        <li><img src={'https://source.unsplash.com/300x300/?' + props.link3 } alt='pik from unsplash' /></li>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link1 } alt={`pik from unsplash ${slug}`} /></li>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link2 } alt={`pik from unsplash ${slug}`} /></li>
+        <li><img src={'https://source.unsplash.com/300x300/?' + props.link3 } alt={`pik from unsplash ${slug}`} /></li>
     </ul>
     )
 }
+
 export default function portfolio() {
+    
     return (
         <section id='portfolio' className='portfolio'>
             <div className='section-title-black'>PORTFOLIO</div>

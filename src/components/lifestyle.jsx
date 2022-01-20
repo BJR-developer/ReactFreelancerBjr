@@ -1,7 +1,8 @@
-import React from 'react'
-import './css/lifestyle.css'
+import React from 'react';
+import './css/lifestyle.css';
 
 export default function lifestyle() {
+
     return (
         <div className='lifestyle w3-animate-down'>
             <div className='section-title'>FEATURED PROJECTS</div>
