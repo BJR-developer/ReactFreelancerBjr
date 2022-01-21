@@ -1,3 +1,7 @@
+.smallblog{
+    width:1120px;
+    margin: auto;
+}
 .blog-container>ul{
     display: flex;
     margin: auto;
@@ -6,11 +10,9 @@
     place-items: center;
     width: 1200px;
 }
-.blog-container{
-    margin-left: 100px;
-}
-@media only screen and (max-width:1200px){
-    .blog-container>ul{
+
+@media only screen and (max-width:1120px){
+    .smallblog{
         width: auto;
     }
 }
@@ -86,4 +88,8 @@
 .goback{
     color: rgb(65, 65, 65);
     font-size: 12px;
+}
+.seeall{
+    float: right;
+    margin: -30px 100px;
 }

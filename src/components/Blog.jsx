@@ -34,6 +34,7 @@ import { BlogLoop } from './loopcomponents/blog/BlogLoop';
                 </ul>
             </div>
             <Link to='loadmore' smooth={true}><button id='loadmore' onClick={increment} className='loadmore'>LOAD MORE</button></Link>
+            <a href='/posts' className='seeall'>SEE ALL</a>
         </section>
     )
 }
